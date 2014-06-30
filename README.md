@@ -11,7 +11,7 @@ specified 'brand-color' value, or use it as a color highlight in a
 task switcher. 
 
 This feature has been developed in the past under multiple proprietary 
-names, such as "mapplication-navbutton-color" for Internet Explorer 
+names, such as "msapplication-navbutton-color" for Internet Explorer 
 and "apple-mobile-web-app-status-bar-style" for Mobile Safari. 
 
 Authors MUST NOT use the proprietary variants of this meta extension. 
