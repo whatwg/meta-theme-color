@@ -38,12 +38,13 @@ To <dfn>find a page's brand color</dfn>:
 "brand-color" meta elements on the page, in document order. 
 1. For each <var>element</var> in <var>candidate elements</var>: 
   1. Parse a component value from <var>element</var>'s content attribute value. [[css-syntax]] 
-  1. Attempt to parse the result as a CSS color. If it succeeds, return the parsed color. 
+  1. Attempt to parse the result as a CSS color:
+     1. If it succeeds, return the parsed color.
+     1. Otherwise, the page has no brand color and abort these steps.
 
-
-> Note: This implies that the first successfully parsed "brand-color" 
-meta element defines the page's "brand color". Any further 
-"brand-color" meta elements have no effect. 
+> Note: This implies that the first "brand-color" meta element defines
+  the page's "brand color". Any further "brand-color" meta elements
+  have no effect. 
 
 If "brand-color" meta elements are added or removed from the page, or 
 have their content attribute changed, user agents MUST find the page's 
