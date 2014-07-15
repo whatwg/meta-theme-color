@@ -40,11 +40,11 @@ To <dfn>find a page's theme color</dfn>:
   1. Parse a component value from <var>element</var>'s content attribute value. [[css-syntax]] 
   1. Attempt to parse the result as a CSS color:
      1. If it succeeds, return the parsed color.
-     1. Otherwise, the page has no theme color and abort these steps.
+     1. Otherwise, ignore <var>element</var> and continue.
 
-> Note: This implies that the first "theme-color" meta element defines
-  the page's "theme color". Any further "theme-color" meta elements
-  have no effect. 
+> Note: This implies that the first "theme-color" meta element that
+  successfully parses defines the page's "theme color". Any further
+  "theme-color" meta elements have no effect. 
 
 If "theme-color" meta elements are added or removed from the page, or 
 have their content attribute changed, user agents MUST find the page's 
