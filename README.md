@@ -37,7 +37,8 @@ To <dfn>find a page's theme color</dfn>:
 1. Let <var>candidate elements</var> be a list of all the 
 "theme-color" meta elements on the page, in document order. 
 1. For each <var>element</var> in <var>candidate elements</var>: 
-  1. Parse a component value from <var>element</var>'s content attribute value. [[css-syntax]] 
+  1. [Parse a component value](http://dev.w3.org/csswg/css-syntax/#parse-component-value) 
+     from <var>element</var>'s content attribute value. [[css-syntax]] 
   1. Attempt to parse the result as a CSS color:
      1. If it succeeds, return the parsed color.
      1. Otherwise, ignore <var>element</var> and continue.
